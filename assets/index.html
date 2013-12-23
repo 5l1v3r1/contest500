@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Macheads101 - Contest</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <center>
+            <span class="title">500<sup>th</sup> Video Contest!</span>
+        </center>
+        <div id="container">
+            <input id="submit-field"></input>
+            <div id="status-field"></div>
+            <div id="more-info">
+                <span id="description">
+                    Solve these equations for the 11 variables, a-k, which are integers ranging from 0 through 9 (inclusive). Integer division always rounds down (i.e. 3/2 = 1, 8/3 = 2, etc.). Modulo and division are undefined for a divisor of 0.<br />
+                </span>
+                <span class="equations">
+                    Divisions: <span class="equ">j / b = f</span> <span class="equ">c / i = b</span> <span class="equ">d / e = a</span> <span class="equ">h / e = b</span><br />
+                    Moduli: <span class="equ">b % c = e</span> <span class="equ"> f % d = j / d</span> <span class="equ"> k % i = j</span> <span class="equ"> k % d = a * b</span><br />
+                    Subtraction: <span class="equ">e - g = i</span> <span class="equ"> d - g = c</span><br />
+                    Other: <span class="equ">k + a = d</span> <span class="equ">a * b = e * i</span>
+                </span><br />
+                <span id="downloads">
+                    Download the source: <a href="languages/test.c">C</a> <a href="languages/test.js">JavaScript</a> <a href="languages/Test.java">Java</a> <a href="languages/test.py">Python</a> <a href="languages/test.rb">Ruby</a>
+                </span>
+            </div>
+            <center><div id="more-button" onclick="expandDespand()">
+                <span>...</span>
+            </div></center>
+        </div>
+    </body>
+</html>

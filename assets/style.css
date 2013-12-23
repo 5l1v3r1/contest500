@@ -1,0 +1,120 @@
+body {
+    background-color: #e8fbff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.title {
+    font-size: 3em;
+    position: relative;
+    top: 15px;
+}
+
+#container {
+    position: relative;
+    margin-left: -300px;
+    width: 600px;
+    height: 140px;
+    left: 50%;
+    top: 30px;
+    border-radius: 10px;
+    background-color: #c2e5ed;
+    overflow: hidden;
+}
+
+#submit-field {
+    position: relative;
+    width: 540px;
+    left: 30px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #BBB;
+    outline: none;
+    margin-top: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#status-field {
+    position: relative;
+    width: 520px;
+    left: 30px;
+    height: 20px;
+    top: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+#submit-field:focus {
+    border: 1px solid rgba(0,0,0,0);
+    box-shadow: 0px 0px 5px #1ce8ff;
+}
+
+#more-button {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 3px;
+}
+
+#more-button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#more-button span {
+    position: relative;
+    top: -7px;
+    font-size: 15px;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#more-info {
+    height: 160px;
+    width: 540px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+span.equ {
+    background-color: #8CCBFF;
+    border-radius: 2px;
+    padding: 3px 3px 3px 3px;
+    margin-left: 2px;
+}
+
+#more-info span.equations {
+    line-height: 32px;
+    position: relative;
+    top: 20px;
+}
+
+#description {
+    font-size: 14px;
+}
+
+#submit-button {
+    position: relative;
+    top: -2px;
+}
+
+#downloads {
+    position: relative;
+    top: 30px;
+}
