@@ -40,6 +40,8 @@ while true
         else
             puts 'invalid key :('
         end
+    rescue ZeroDivisionError
+        puts 'invalid key :('
     rescue
         puts 'string must be numeric'
     end

@@ -11,12 +11,12 @@ def is_solution(key):
     i = int(key[8])
     j = int(key[9])
     k = int(key[10])
-    if j / b != f: return False
-    if c / i != b: return False
-    if d / e != a: return False
-    if h / e != b: return False
+    if j // b != f: return False
+    if c // i != b: return False
+    if d // e != a: return False
+    if h // e != b: return False
     if b % c != e: return False
-    if f % d != j / d: return False
+    if f % d != j // d: return False
     if k % i != j: return False
     if k % d != a * b: return False
     if e - g != i: return False
@@ -33,6 +33,8 @@ def main():
                 break
             else:
                 print('incorrect key :(')
+        except ZeroDivisionError:
+            print('incorrect key :(')
         except ValueError:
             print('string must be numeric')
 

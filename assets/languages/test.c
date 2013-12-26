@@ -23,6 +23,7 @@ int is_solution(const char * aStr) {
         h < 0 || i < 0 || j < 0 || k < 0) {
         return -1;
     }
+    if (b == 0 || i == 0 || e == 0 || c == 0 || d == 0) return 0;
     if (j / b != f) return 0;
     if (c / i != b) return 0;
     if (d / e != a) return 0;

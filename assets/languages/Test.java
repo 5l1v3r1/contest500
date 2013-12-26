@@ -23,18 +23,22 @@ public class Test {
         int i = parseInt(key.charAt(8));
         int j = parseInt(key.charAt(9));
         int k = parseInt(key.charAt(10));
-        if (j / b != f) return false;
-        if (c / i != b) return false;
-        if (d / e != a) return false;
-        if (h / e != b) return false;
-        if (b % c != e) return false;
-        if (f % d != j / d) return false;
-        if (k % i != j) return false;
-        if (k % d != a * b) return false;
-        if (e - g != i) return false;
-        if (d - g != c) return false;
-        if (k + a != d) return false;
-        if (a * b != e * i) return false;
+        try {
+            if (j / b != f) return false;
+            if (c / i != b) return false;
+            if (d / e != a) return false;
+            if (h / e != b) return false;
+            if (b % c != e) return false;
+            if (f % d != j / d) return false;
+            if (k % i != j) return false;
+            if (k % d != a * b) return false;
+            if (e - g != i) return false;
+            if (d - g != c) return false;
+            if (k + a != d) return false;
+            if (a * b != e * i) return false;
+        } catch (ArithmeticException ex) {
+            return false;
+        }
         return true;
     }
     
